@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<!-- TODO: fig;ure out how to make background image fit/move to size whole screen. -->
+<head>
+    <title>Hackathon Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f6f9fc;
+            color: #4a4a4a;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        header a {
+            color: #4a4a4a;
+            font-size: 16px;
+            text-decoration: none;
+            margin-left: 30px;
+            transition: color 0.2s;
+        }
+
+        header a:hover {
+            color: #ea4c89;
+        }
+
+        .hero {
+            background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701504979.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 60px;
+            font-weight: 300;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            animation: fadeInUp 1s;
+        }
+
+        .hero p {
+            font-size: 24px;
+            font-weight: 300;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: -100px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn {
+            background-color: #ea4c89;
+            color: #fff;
+            padding: 10px 20px;
+
+            border-radius: 30px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: background-color 0.2s;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #c92464;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .feature {
+            width: calc(33.33% - 20px);
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+
+        .feature:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            font-weight: 300;
+            color: #666;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            header a {
+                margin-left: 20px;
+            }
+
+            .hero h2 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .container {
+                padding: 30px;
+            }
+
+            .features {
+                flex-wrap: wrap;
+            }
+
+            .feature {
+                width: calc(50% - 20px);
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <h1>HaverHacks 2023</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h2>Join the Hackathon</h2>
+        <p>Are you ready to take your coding skills to the next level?
+             Sign up now and show us what you've got!</p>
+        <a href="#" class="btn">Sign Up Now</a>
+    </div>
+
+    <div class="container">
+        <h2>What to Expect</h2>
+        <p>Our hackathon is a 24-hour coding event that brings together the most talented developers, designers, and
+            entrepreneurs to collaborate and build amazing projects. Here are some of the key features of the event:</p>
+
+        <div class="features">
+            <div class="feature">
+                <img src="https://i.imgur.com/15CDmJH.png" alt="Laptop icon">
+                <h3>Intense Competition</h3>
+                <p>Compete against other teams and individuals to build the best project and win prizes.</p>
+            </div>
+            <div class="feature">
+                <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701504979.jpg">
+                <h3>Cloud Infrastructure</h3>
+                <p>Use the latest cloud technologies to build your project and scale it to thousands of users.</p>
+            </div>
+        </div>
+
+        <a href="#" class="btn">Learn More</a>
+    </div>
+</body>
+
+</html>
