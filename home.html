@@ -63,15 +63,15 @@
         </div>
         <div class="sponsors-box">
             <h2>Thank You to Our Sponsors</h2>
-            <p>We would like to express our gratitude to the following sponsors for supporting our event:</p>
+            <p>We would like to express our gratitude to the following sponsors:</p>
             <ul class="sponsors-list">
-                <li>
-                    <img
+                <li class="sponsor">
+                    <img class="sponsors-image"
                         src="https://instructure-uploads.s3.amazonaws.com/account_23930000000000001/attachments/63765/THS-Seal-2c.png?AWSAccessKeyId=AKIAJFNFXH2V2O7RPCAA&Expires=1938411768&Signature=ewaYhupFt3fbG4TPx5CTf%2BhmY7A%3D&response-cache-control=Cache-Control%3Amax-age%3D473364000.0%2C%20public&response-expires=473364000.0">
                     The Haverford School
                 </li>
-                <li>
-                    <img src="https://assets.hackclub.com/hack-club-bank-light.png">
+                <li class="sponsor">
+                    <img class="sponsors-image" src="https://assets.hackclub.com/hack-club-bank-light.png">
                     Hack Club Bank
                 </li>
             </ul>
@@ -123,6 +123,17 @@
         margin-bottom: 10px;
     }
 
+    .sponsors-image {
+        height: 50px;
+        width: 50px;
+    }
+
+    .sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     * {
         box-sizing: border-box;
         margin: 0;
@@ -171,20 +182,6 @@
     header a:hover {
         color: #ea4c89;
     }
-
-    /*
-html {
-    background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701504979.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}*/
 
     .hero {
         background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Wallpapers.jpg');
