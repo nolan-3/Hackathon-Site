@@ -15,27 +15,59 @@
 
         <h1>HaverHacks 2023</h1>
         <nav>
-            TODO
-            <a href="https://www.haverford.org/">Host School</a>
             <a href="mailto:nolamccl@haverford.org">Contact Us</a>
+            <a href="https://www.haverford.org/">Host School</a>
         </nav>
 
     </header>
     <div class="hero">
 
-        <h2>Join HaverHacks</h2>
-        <p>Are you ready to unlock your creative coding skills?
+        <!-- <h2>Join other high schoolers on May 13th</h2> -->
+        <h2>Ready to Unlock Your Creative Coding Skills?
             <br>
-            Don't know how to code? No problem, no prior experience necessary
+            Join Our Hackathon
             <br>
-            Sign up today!
-        </p>
+            No Prior Experience Necessary!
+            <br>
+        </h2>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScpmdiT8VwRGllVnwpWMg9wLXEHqjFmenN9rq44WnJbO3q52g/viewform?usp=sf_link"
             class="btn">Sign Up Now</a>
+        <br>
+        <div class="hackathon-info">
+            <p class="date">Saturday May 13, 2023 8am-5pm</p>
+            <p style="animation: none;"> | </p>
+            <a href="https://www.google.com/maps/place/The+Haverford+School/@40.0138071,-75.3075697,17z/data=!3m2!4b1!5s0x89c6c079e6854cf1:0x8a8d4564a913af47!4m6!3m5!1s0x89c6c079e8c4663b:0x79d5170780e8f9c8!8m2!3d40.013803!4d-75.305381!16zL20vMGNnNHJx"
+                class="location">The Haverford School</a>
+            <p style="animation: none;"> | </p>
+            <p class="phrase">Beginners Welcome!</p>
+        </div>
+
     </div>
 
 
+
     <div class="container">
+        <div class="fancy-div">
+            <h1>High Schoolers!</h1>
+            <div class="align">
+                <div style="display: inline-block; width: 49%; vertical-align: top; margin-right:10px">
+                    <h2>All Skill Levels Welcome!</h2>
+                    <p style="text-align: left;">Whether you've been coding for years or you've never written a line of code, 
+                        you're still absolutely encouraged to come. We'll hold beginner workshops and help you along the way to
+                        make sure you have an amazing experience.</p>
+                </div>
+                <div style="display: inline-block; width: 49%; vertical-align: top; margin-left:10px">
+                    <h2>Totally Free!</h2>
+                    <p style="text-align: left;">Everything at this event is totally free, including meals, drinks, swag,
+                        and prizes. All you'll need to bring is a laptop; if you don't have one, contact us and we'll figure something out.</p>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <br>
+        <br>
         <h2>What to Expect</h2>
         <p>Our hackathon is a 10-hour coding event that brings together interested students
             to collaborate and build amazing projects. Here are some of the key features of the event:</p>
@@ -44,7 +76,7 @@
             <div class="feature">
                 <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Background.jpg"
                     alt="Laptop icon">
-                <h2>Learn</h2>
+                <h2>Learning</h2>
                 <p>There will be lots of opportunities to learn from those around you, and you can
                     participate in our workshops to learn important programming skills
                 </p>
@@ -61,9 +93,9 @@
             <div class="feature">
                 <img src="https://media.wired.com/photos/5932354326780e6c04d2a4e4/master/w_2560%2Cc_limit/Students-at-Northwoods-Middle-School-in-North-Charleston-South-Carolina.jpg"
                     alt="Feature 2">
-                <h2>Have Fun</h2>
+                <h2>Fun</h2>
                 <p>You'll have the chance to meet with other interested and aspiring hackers,
-                    and build relationships. You'll get to play around in our organized games. </p>
+                    and build relationships, and you'll just get to play around in some organized games. </p>
             </div>
         </div>
         <div class="sponsors-box">
@@ -76,8 +108,8 @@
                     The Haverford School
                 </li>
                 <li class="sponsor">
-                    <img class="sponsors-image" src="https://assets.hackclub.com/hack-club-bank-light.png">
-                    Hack Club Bank
+                    <img class="sponsors-image" src="https://assets.hackclub.com/icon-rounded.png">
+                    Hack Club
                 </li>
             </ul>
         </div>
@@ -85,18 +117,22 @@
 
         <!-- <a href="#" class="btn">Learn More</a> -->
     </div>
+
 </body>
 
 </html>
 
 <style>
     .sponsors-box {
-        background-color: #5f2ca6;
+        background-color: #000;
         color: #fff;
         border-radius: 10px;
         padding: 20px;
         margin: 20px 0;
         text-align: center;
+        position: absolute;
+        width: 70%;
+        left: 15%
     }
 
     .sponsors-list {
@@ -146,6 +182,9 @@
     }
 
     body {
+        background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Wallpapers.jpg');
+        background-position: center;
+        background-attachment: fixed;
         font-family: 'Open Sans', sans-serif;
         /*background-color: #f6f9fc;*/
         color: #4a4a4a;
@@ -189,7 +228,7 @@
     }
 
     .hero {
-        background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Wallpapers.jpg');
+        /*background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Wallpapers.jpg');*/
         background-position: center;
         background-attachment: fixed;
         color: #fff;
@@ -203,7 +242,7 @@
     }
 
     .hero h2 {
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 300;
         margin-bottom: 20px;
         animation: fadeInUp 1s;
@@ -234,7 +273,8 @@
         max-width: max-content;
         margin: 0 auto;
         padding: 50px;
-        background-color: #ea4c89;
+        /*background-color: #000;
+        background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Wallpapers.jpg');*/
         color: #fff;
         text-align: center;
         border-radius: 10px;
@@ -335,5 +375,75 @@
             width: calc(50% - 20px);
             margin-bottom: 20px;
         }
+    }
+
+    .fancy-div {
+        background: linear-gradient(to right, #ffdde1, #ee9ca7);
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .fancy-div h1 {
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .fancy-div h2 {
+        color: #fff;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .fancy-div p {
+        color: #333;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .align {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .hackathon-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        top: 80%;
+    }
+
+    .hackathon-info p {
+        margin: 0;
+    }
+
+    .location {
+        flex-grow: 1;
+        color: hotpink;
+        font-size: 24px;
+        font-weight: 300;
+        max-width: 800px;
+        margin: 0 auto;
+        animation: fadeInUp 1s;
+        animation-delay: 0.5s;
+    }
+
+    .date {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .phrase {
+        flex-grow: 1;
+        text-align: right;
     }
 </style>
