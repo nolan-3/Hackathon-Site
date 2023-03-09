@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- TODO: figure out how to make background image fit/move to size whole screen. -->
 
 <head>
     <title>Hackathon Website</title>
@@ -23,9 +22,7 @@
     <div class="hero">
 
         <!-- <h2>Join other high schoolers on May 13th</h2> -->
-        <h2>Ready to Unlock Your Creative Coding Skills?
-            <br>
-            Join Our Hackathon
+        <h2>Ready to Unlock Your Skills?
             <br>
             No Prior Experience Necessary!
             <br>
@@ -50,54 +47,59 @@
         <div class="fancy-div">
             <h1>High Schoolers!</h1>
             <div class="align">
-                <div style="display: inline-block; width: 49%; vertical-align: top; margin-right:10px">
-                    <h2>All Skill Levels Welcome!</h2>
-                    <p style="text-align: left;">Whether you've been coding for years or you've never written a line of code, 
-                        you're still absolutely encouraged to come. We'll hold beginner workshops and help you along the way to
-                        make sure you have an amazing experience.</p>
-                </div>
-                <div style="display: inline-block; width: 49%; vertical-align: top; margin-left:10px">
-                    <h2>Totally Free!</h2>
-                    <p style="text-align: left;">Everything at this event is totally free, including meals, drinks, swag,
-                        and prizes. All you'll need to bring is a laptop; if you don't have one, contact us and we'll figure something out.</p>
+                <div>
+                    <div style="display: inline-block; width: 49%; vertical-align: top; margin-right:10px">
+                        <h2>All Skill Levels Welcome!</h2>
+                        <p style="text-align: left;">Whether you've been coding for years or you've never written a line
+                            of code,
+                            you're still absolutely encouraged to come. We'll hold beginner workshops and help you along
+                            the way to
+                            make sure you have an amazing experience.</p>
+                    </div>
+                    <div style="display: inline-block; width: 49%; vertical-align: top; margin-left:10px">
+                        <h2>Totally Free!</h2>
+                        <p style="text-align: left;">Everything at this event is totally free, including meals, drinks,
+                            swag,
+                            and prizes. All you'll need to bring is a laptop; if you don't have one, contact us and
+                            we'll figure something out.</p>
+                    </div>
+                    <div class="features">
+                        <div class="feature">
+                            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Background.jpg"
+                                alt="Laptop icon">
+                            <h3>Learning</h3>
+                            <p>There will be lots of opportunities to learn from those around you, and you can
+                                participate in our workshops to learn important programming skills
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <img src="https://static.wixstatic.com/media/e353ed_bb875221ce214a45bd5e264e32e0728d~mv2.jpg/v1/fill/w_602,h_480,al_c,lg_1,q_80,enc_auto/computerscience.jpg"
+                                alt="Laptop icon">
+                            <h3>Swag and Prizes</h3>
+                            <p>Compete against other teams and individuals to build the best project. Prizes will be
+                                awarded to the
+                                best projects.
+                                There will also be free swag such as shirts, water bottles, and stickers
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <img src="https://media.wired.com/photos/5932354326780e6c04d2a4e4/master/w_2560%2Cc_limit/Students-at-Northwoods-Middle-School-in-North-Charleston-South-Carolina.jpg"
+                                alt="Feature 2">
+                            <h3>Fun</h3>
+                            <p>You'll have the chance to meet with other interested and aspiring hackers,
+                                and build relationships, and you'll just get to play around in some organized games.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
 
 
         <br>
         <br>
-        <h2>What to Expect</h2>
-        <p>Our hackathon is a 10-hour coding event that brings together interested students
-            to collaborate and build amazing projects. Here are some of the key features of the event:</p>
 
-        <div class="features">
-            <div class="feature">
-                <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Background.jpg"
-                    alt="Laptop icon">
-                <h2>Learning</h2>
-                <p>There will be lots of opportunities to learn from those around you, and you can
-                    participate in our workshops to learn important programming skills
-                </p>
-            </div>
-            <div class="feature">
-                <img src="https://static.wixstatic.com/media/e353ed_bb875221ce214a45bd5e264e32e0728d~mv2.jpg/v1/fill/w_602,h_480,al_c,lg_1,q_80,enc_auto/computerscience.jpg"
-                    alt="Laptop icon">
-                <h3>Competition and Swag</h3>
-                <p>Compete against other teams and individuals to build the best project. Prizes will be awarded to the
-                    best projects.
-                    There will also be free swag such as shirts, water bottles, and stickers
-                </p>
-            </div>
-            <div class="feature">
-                <img src="https://media.wired.com/photos/5932354326780e6c04d2a4e4/master/w_2560%2Cc_limit/Students-at-Northwoods-Middle-School-in-North-Charleston-South-Carolina.jpg"
-                    alt="Feature 2">
-                <h2>Fun</h2>
-                <p>You'll have the chance to meet with other interested and aspiring hackers,
-                    and build relationships, and you'll just get to play around in some organized games. </p>
-            </div>
-        </div>
         <div class="sponsors-box">
             <h2>Thank You to Our Sponsors</h2>
             <p>We would like to express our gratitude to the following sponsors:</p>
@@ -183,6 +185,7 @@
 
     body {
         background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Wallpapers.jpg');
+        background-color: #000;
         background-position: center;
         background-attachment: fixed;
         font-family: 'Open Sans', sans-serif;
@@ -202,6 +205,8 @@
         left: 0;
         right: 0;
         z-index: 1;
+        position: fixed;
+        width: 100%;
     }
 
     header h1 {
@@ -281,7 +286,6 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-top: -100px;
         position: relative;
-        z-index: 2;
     }
 
     .btn {
