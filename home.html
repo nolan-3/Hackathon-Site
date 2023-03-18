@@ -67,9 +67,10 @@
                         <div class="feature">
                             <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Background.jpg"
                                 alt="Laptop icon">
-                            <h3>Learning</h3>
-                            <p>There will be lots of opportunities to learn from those around you, and you can
-                                participate in our workshops to learn important programming skills
+                            <h3>Learning and Fun</h3>
+                            <p> You can participate in our workshops to learn important programming skills. 
+                                You'll have the chance to meet with other interested students,
+                                build relationships, and participate in games.
                             </p>
                         </div>
                         <div class="feature">
@@ -77,17 +78,8 @@
                                 alt="Laptop icon">
                             <h3>Swag and Prizes</h3>
                             <p>Compete against other teams and individuals to build the best project. Prizes will be
-                                awarded to the
-                                best projects.
+                                awarded to the best projects.
                                 There will also be free swag such as shirts, water bottles, and stickers
-                            </p>
-                        </div>
-                        <div class="feature">
-                            <img src="https://media.wired.com/photos/5932354326780e6c04d2a4e4/master/w_2560%2Cc_limit/Students-at-Northwoods-Middle-School-in-North-Charleston-South-Carolina.jpg"
-                                alt="Feature 2">
-                            <h3>Fun</h3>
-                            <p>You'll have the chance to meet with other interested and aspiring hackers,
-                                and build relationships, and you'll just get to play around in some organized games.
                             </p>
                         </div>
                     </div>
@@ -310,7 +302,7 @@
 
     .features {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-top: 50px;
         flex-direction: row
     }
@@ -318,7 +310,7 @@
     .feature {
         width: calc(33.33% - 20px);
         padding: 20px;
-        background-color: #fff;
+        background-color: #b3d7b7;
         color: #000;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -339,11 +331,13 @@
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 10px;
+        color: white
     }
 
     .feature p {
         font-size: 14px;
         font-weight: 300;
+        color: white
     }
 
     @media (max-width: 800px) {
